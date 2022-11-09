@@ -1,18 +1,15 @@
 import React from 'react'
 import Header from './Header'
-import Navbar from './Navbar'
 
 function Layout({children}) {
     return (
-        <div className=' overflow-x-hidden  '>
-                <div className='col-span-12'>
-                    <Header/>
-                </div>
-                <div className='col-span-12 whitespace-nowrap'>
-                    <Navbar/>
-                </div>
-
-            <main className='col-span-12'> {children}</main>
+        <div className='flex flex-col overflow-x-hidden h-screen '>
+            <div className='  bg-red-200  '>
+                <Header/>
+            </div>
+            <div className=' h-full bg-green-200  border pt-4   '>
+                <main className=''> {children}</main>
+            </div>
         </div>
     )
 }
