@@ -5,7 +5,7 @@ import Design from '../components/Layout/Pages/Design'
 function Index(props) {
     return (
     <Layout>
-        /design   stranitsaga o'ting!!!
+
     </Layout>
     )
 }
